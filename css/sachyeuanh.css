@@ -1,0 +1,60 @@
+
+
+	img {
+		width: 300px;
+		height: 500px;
+		box-shadow: 0 0 3px gray;
+		margin: 30px 50px 10px 20px;
+		float: left;
+	}
+
+	.ten-gia {
+		padding: 30px;
+		color: orangered;
+		font-size: 24px;
+	}
+
+	#soluong {
+		width: 100px;
+		height: 40px;
+		text-align: center;
+	}
+
+	#mua {
+		background-color: orange;
+		font-variant: small-caps;
+		color: white;
+		font-size: 24px;
+		margin-left: 20px;
+		width: 150px;
+		height: 40px;
+		border-radius: 5px;
+	}
+
+	button:hover {
+		background-color: #A52A2A;
+	}
+
+
+
+	table {
+		width: 85%;
+		border-collapse: collapse;
+	}
+
+	table a {
+		text-decoration: none;
+		color: #DC143C;
+	}
+
+	table a:hover {
+		color: blue;
+	}
+
+	tr:nth-child(2n+1) {
+		background-color: DarkGray;
+	}
+
+	tr:nth-child(2n) {
+		background-color: white;
+	}

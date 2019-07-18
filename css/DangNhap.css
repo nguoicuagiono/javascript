@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.FormDangKy {
+	width: 100%;
+	height: auto;
+}
+
+.Col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.Col-75 {
+  float: left;
+  width: 62%;
+  margin-top: 6px;
+}
+
+input[type=text], input[type=password], input[type=date], #List, select, textarea {
+	border-radius: 4px;
+	resize: vertical;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid black;
+}
+
+label {
+	font-weight: bold;
+	display: inline-block;
+	padding: 12px 12px 12px 0;
+}
+
+input[type=button] {
+	font-weight: bold;
+	background-color: rgb(65, 129, 189);
+	color: black;
+	padding: 12px 20px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+input[type=button]:hover {
+  background-color: white;
+}

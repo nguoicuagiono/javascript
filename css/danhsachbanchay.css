@@ -1,0 +1,22 @@
+body {
+    background-color: #FFF0F5;
+}
+
+table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+tr {
+    line-height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: orangered;
+}

@@ -1,0 +1,4 @@
+
+function doSignOut() {
+	location.reload();
+};

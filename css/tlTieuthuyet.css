@@ -1,0 +1,47 @@
+.big {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+.new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+}
+
+.big2 {
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.big2:hover {
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    background-color: #C0C0C0;
+}
+
+.sach {
+    width: 200px;
+    height: 300px;
+}
+
+.tenTP {
+    font-size: 15px;
+    color: #FF4500;
+}
+
+.tenTP:hover {
+    color: #2E8B57;
+}
+
+a {
+    color: black;
+}
+
+.tieuthuyet {
+    color: red;
+}

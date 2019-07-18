@@ -1,0 +1,282 @@
+﻿@charset "UTF-8";
+@import "DangKy.css";
+@import "DangNhap.css";
+
+
+
+
+
+:root {
+	--header-nav-text-color: white;
+	--nav-active-color: white;
+	--box-bg-color: #f0ffff;
+	--header-bg-color: #a7e2e9;
+	--nav-bg-body-heading-color: rgb(17, 64, 102);
+	--nav-hover-color: #223848;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Tahoma";
+}
+
+audio {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* phần đầu */
+.Header {
+	overflow: auto;
+	width: 100%;
+	height: 200px;
+	background-color: var(--header-bg-color);
+	color: var(--header-nav-text-color);
+	text-shadow: 2px 2px 5px black;
+	position: relative;
+	background-image: url(../imager/hinhnen.jpg);
+	background-size: 100% 100%;
+	padding-bottom: 8%;
+	
+	
+}
+.header_Text {
+    text-align: center;
+    margin: 0;
+   
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    left: 800px;
+    color: rgba(190, 14, 14, 0.719);
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+    
+
+ 
+}
+.icon8 img:hover{
+    filter: drop-shadow(8px 8px 10px gray);
+    filter: contrast(0%);
+
+}
+
+.icon8 img{
+    width: 55px;
+    transition: 0.4s;
+    filter: drop-shadow(8px 8px 10px gray);
+    filter: contrast(150%);
+    cursor: pointer;
+}
+
+.icon8{
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    right: 0px;
+}
+
+
+.BigTitle {
+	margin: 0px;
+	padding: 0px;
+	font-size: 350%;
+}
+
+
+
+
+
+
+
+/* thanh menu */
+.Nav {
+	overflow: auto;
+	background-color: var(--nav-bg-body-heading-color);
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* các mục menu */
+/* bên trái */
+.Nav a {
+	
+	width: 120px;
+	height: 40px;
+	font-weight: bold;
+	float: left;
+	display: block;
+	color: var(--header-nav-text-color);
+	text-align: center;
+	font-size: 0.9rem;
+	padding: 15px 15px;
+	margin: 2px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+/* bên phải */
+#DangNhap, #DangKy, #Diem,  #CaNhanNguoiDung, #DangXuat {
+	float: right;
+}
+
+/* các mục menu khi được chọn */
+.Nav a:hover:not(.Active) {
+	background-color: var(--nav-hover-color);
+	color: var(--header-nav-text-color);
+}
+
+.Nav a.Active {
+	background-color: var(--nav-active-color);
+	color: var(--nav-bg-body-heading-color);
+}
+article{
+	height: auto;
+	width: 100%;
+}
+	
+
+/* phần thân */
+body {
+	margin: 0px;
+	overflow-y: scroll;
+}
+
+/* khung hình */
+.Column {
+	padding: 10px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border: 1px solid var(--nav-bg-body-heading-color);
+	background-color: var(--box-bg-color);
+}
+
+.Column h1 {
+	color: var(--nav-hover-color);
+	padding-bottom: 10px;
+	border-bottom: 2px solid var(--nav-bg-body-heading-color);
+	margin: 0px;
+}
+
+.Column h2 {
+	color: var(--nav-bg-body-heading-color);
+}
+
+/* cột trái */
+.Left {
+
+	width: 100%;
+	box-shadow: 3px 3px 5px var(--nav-bg-body-heading-color);
+	
+}
+
+/* cột phải
+.Right {
+	float: right;
+	width: 25%;
+	box-shadow: -4px 3px 5px var(--nav-bg-body-heading-color);
+
+
+} */
+
+/* xóa float sau các cột */
+.Row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#PageContent, #MinorPageContent {
+	overflow-x: auto;
+}
+
+/* phần chân */
+.Footer {
+	background: var(--box-bg-color);
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+	border-top: 5px solid var(--nav-bg-body-heading-color);
+	font-size: 0.8em;
+}
+
+#PageContent {
+	display: none;
+	padding: 0px;
+}
+
+/* giao diện tự động điều chỉnh kích cỡ với nhiều loại thiết bị khác nhau */
+@media screen and (max-width: 800px) {
+	.Left, .Right, .Row, .Header.Logo, .Nav {
+  	width: 100%;
+  }
+}
+
+
+.menu>ul>li:hover>.submenu {
+    display: block;
+}
+
+.submenu {
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 5px black;
+    list-style: none;
+    position: absolute;
+    display: none;
+    background-color: white;
+}
+
+.submenu a {
+    line-height: 15px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.submenu a:hover {
+    color: white;
+    background-color: rgba(9, 9, 192, 0.842);
+}
+
+footer {
+    background-color: #2F4F4F;
+    color: white;
+    min-height: 100px;
+    border-top: 5px double black;
+    text-align: center;
+    clear: both;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+
+.icon8 img:hover{
+    filter: drop-shadow(8px 8px 10px gray);
+    filter: contrast(0%);
+
+}
+
+.icon8 img{
+	width: 55px;
+	height: auto;
+    transition: 0.4s;
+    filter: drop-shadow(8px 8px 10px gray);
+    filter: contrast(150%);
+    cursor: pointer;
+}
+
+.icon8{
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    right: 0px;
+}
+

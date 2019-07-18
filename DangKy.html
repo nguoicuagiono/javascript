@@ -1,0 +1,79 @@
+<script type="text/javascript" src="javascript/DangKy.js"></script>
+<form id="FormDangKy" method="post">
+	<div class="Row">
+		<div class="Col-25">
+			<label for="tenTaiKhoan">Tên tài khoản</label>
+		</div>
+		<div class="Col-75">
+			<input type="text" id="TenTaiKhoan" name="tenTaiKhoan" placeholder="Tên tài khoản..">
+		</div>
+	</div>
+	
+	<div class="Row">
+		<div class="Col-25">
+			<label for="gioiTinh">Giới tính</label>
+		</div>
+		<div class="Col-75">
+			<label><input id="GenderM" type="radio" name="gender" value="male"> Nam </label>
+			<label><input id="GenderF" type="radio" name="gender" value="female"> Nữ </label>
+		</div>
+	</div>
+	
+	<div class="Row">
+		<div class="Col-25">
+			<label for="ngaySinh">Ngày sinh</label>
+		</div>
+		<div class="Col-75">
+			<input type="date" name="date" placeholder="mm/dd/yyyy">
+		</div>
+		<br>
+	</div>
+	
+	<div class="Row">
+		<div class="Col-25">
+			<label for="ngheNghiep">Nghề nghiệp</label>
+		</div>
+		<div class="Col-75">
+			<input id="List" list="careers" name="career">
+				<datalist id="careers">
+					<option value="Nhân viên bán hàng">
+					<option value="Giáo viên">
+					<option value="Học sinh - Sinh viên">
+					<option value="Đầu bếp">
+					<option value="Lập trình viên">
+				</datalist>
+		</div>
+		<br>
+	</div>
+	
+	<div class="Row">
+		<div class="Col-25">
+			<label for="CMND">Số CMND</label>
+		</div>
+		<div class="Col-75">
+			<input type="text" id="CMND" name="CMND" placeholder="Số CMND...">
+		</div>
+	</div>
+	
+	<div class="Row">
+		<div class="Col-25">
+			<label for="email">Email</label>
+		</div>
+		<div class="Col-75">
+			<input type="text" id="Email" name="email" placeholder="Email...">
+		</div>
+	</div>
+	
+	<div class="Row">
+		<div class="Col-25">
+			<label for="matKhau">Mật khẩu</label>
+		</div>
+		<div class="Col-75">
+			<input type="password" id="MatKhau" name="matKhau" placeholder="Mật khẩu..">
+		</div>
+	</div>
+
+	<div class="Row">
+		<input type="button" value="Đăng ký" onclick="doSignUp()">
+	</div>
+</form>

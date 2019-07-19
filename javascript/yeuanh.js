@@ -38,5 +38,5 @@ loadPageContent("", "#nuocmat", "sachMotLitNuocMat.html");
  });   
 
  $("#btnTimKiem").click(function() {
-    loadPageContent("", "#btnTimKiem", "sachyeuanh.html");
+    loadPageContent("", "#btnTimKiem", "timkiem.html");
      });   

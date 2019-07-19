@@ -1,5 +1,5 @@
 ﻿
-var afterLoginStudent = "#CaNhanHocSinh, #LichHoc, #Diem";
+var after= "";
 var afterLoginTeacher = "#CaNhanNguoiDung";
 
 $(document).ready(function() {
@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	
 //chúng tôi cũng ẩn một số mục yêu cầu đăng nhập
-	$(afterLoginStudent + ", " + afterLoginTeacher + ", #DangXuat").hide();	
+	$(afterLoginTeacher + ", #DangXuat").hide();	
 
 	
 

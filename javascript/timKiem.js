@@ -26,7 +26,7 @@ $(document).ready(function() {
             }
         }   
         if (trang != "") {
-            $("#iframe").attr("src", trang);
+            $("#loadPageContent").attr("src", trang);
         }
     });
 });

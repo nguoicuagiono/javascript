@@ -21,9 +21,10 @@
 }
 
 audio {
-	position: fixed;
-	bottom: 0px;
-	right: 0px;
+    position: fixed;
+    bottom: 0px;
+	left: 0px;
+	z-index: 88;
 }
 
 /* phần đầu */

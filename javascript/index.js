@@ -71,7 +71,7 @@ $(document).ready(function() {
 
 // hàm này đặt tiêu đề trên tab, sau đó thêm lớp Active vào các mục trên thanh điều hướng, cộng với một số hiệu ứng mờ dần
 function loadPageContent(tabTitle, idNavItemActive, fileName) {
-	var allNavButtonID = "#TrangChu, #GioiThieu, #LienHe, #GopY,#TieuThuyet,#TrinhTham,#NgonTinh,#DocSach, #TimKiem" +
+	var allNavButtonID = "#TrangChu, #GioiThieu, #LienHe, #GopY,#TieuThuyet,#TrinhTham,#NgonTinh,#DocSach, #TimKiem," +
 	" #DangNhap, #DangKy, #DangXuat, #CaNhanNguoiDung";
 	
 // đặt tiêu đề cho trang, sau đó là tiêu đề tab, 
